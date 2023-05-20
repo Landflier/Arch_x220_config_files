@@ -26,7 +26,8 @@ local batteryarc_widget = require("awesome-wm-widgets.batteryarc-widget.batterya
 local brightness_widget = require("awesome-wm-widgets.brightness-widget.brightness")
 -- xrandr for multiple monitors
 local xrandr = require("xrandr")
---
+-- Volume widget
+local volume_widget = require('awesome-wm-widgets.volume-widget.volume')
 --
 -- {{{ Error handling
 -- Check if awesome encountered an error during startup and fell back to
@@ -223,7 +224,7 @@ awful.screen.connect_for_each_screen(function(s)
             s.mypromptbox,
         },
         s.mytasklist, -- Middle widget
-        { -- Right widgets
+	{ -- Right widgets
 	layout = wibox.layout.fixed.horizontal,
 	mykeyboardlayout,
 	-- batteryarc-widget setting
@@ -240,7 +241,12 @@ awful.screen.connect_for_each_screen(function(s)
 	wibox.widget.systray(),
 	mytextclock,
 	s.mylayoutbox,
-        },
+	-- volume widget
+	volume_widget{
+		widget_type = 'arc'
+	},
+	},
+
     }
 end)
 -- }}}
