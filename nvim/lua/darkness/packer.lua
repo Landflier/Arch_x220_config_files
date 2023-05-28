@@ -81,4 +81,8 @@ use {
 use{
 	'PatrBal/vim-textidote'
 }
+use{
+	'tpope/vim-fugitive'
+}
 end)
+
