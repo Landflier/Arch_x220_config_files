@@ -78,11 +78,12 @@ use {
 	end,
 	ft = 'tex'
 }
-use{
-	'PatrBal/vim-textidote'
-}
-use{
-	'tpope/vim-fugitive'
-}
+use{ 'PatrBal/vim-textidote' }
+
+-- Git plugins
+use{ 'tpope/vim-fugitive' }
+
+-- colorscheme
+use{'Tsuzat/NeoSolarized.nvim'}
 end)
 
