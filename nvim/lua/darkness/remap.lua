@@ -12,6 +12,7 @@ vim.keymap.set({"i","n"}, "<C-l>", "<c-g>u<Esc>[s1z=']a<c-g>u") -- fix last spel
 -- vimlatex compile
 --vim.keymap.set({'n', 'i'}, '<Leader>lc>',function() require('vimtex').VimtexComplie() end)
 
+-- lazygit inside vim using floaterm
 
 -- LuaSnip keymaps
 local ls = require("luasnip") --{{{

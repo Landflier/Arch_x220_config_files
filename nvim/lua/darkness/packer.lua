@@ -64,7 +64,6 @@ use {
 	config = function ()
 		vim.g.vimtex_complier_progname= '/usr/bin/nvr'
 		-- add bibtex
-		vim.g.
 		vim.g.vimtex_view_general_viewer = 'okular'
 		vim.g.tex_comment_nospell = 1
 		vim.g.vimtex_view_method="zathura"
@@ -85,5 +84,9 @@ use{ 'tpope/vim-fugitive' }
 
 -- colorscheme
 use{'Tsuzat/NeoSolarized.nvim'}
+
+-- floaterm
+use { 'voldikss/vim-floaterm' }
+
 end)
 
