@@ -79,6 +79,11 @@ _G.packer_plugins = {
     path = "/home/darkness/.local/share/nvim/site/pack/packer/start/LuaSnip",
     url = "https://github.com/L3MON4D3/LuaSnip"
   },
+  ["NeoSolarized.nvim"] = {
+    loaded = true,
+    path = "/home/darkness/.local/share/nvim/site/pack/packer/start/NeoSolarized.nvim",
+    url = "https://github.com/Tsuzat/NeoSolarized.nvim"
+  },
   ["cheatsheet.nvim"] = {
     loaded = true,
     path = "/home/darkness/.local/share/nvim/site/pack/packer/start/cheatsheet.nvim",
@@ -159,6 +164,11 @@ _G.packer_plugins = {
     path = "/home/darkness/.local/share/nvim/site/pack/packer/start/telescope.nvim",
     url = "https://github.com/nvim-telescope/telescope.nvim"
   },
+  ["vim-floaterm"] = {
+    loaded = true,
+    path = "/home/darkness/.local/share/nvim/site/pack/packer/start/vim-floaterm",
+    url = "https://github.com/voldikss/vim-floaterm"
+  },
   ["vim-fugitive"] = {
     loaded = true,
     path = "/home/darkness/.local/share/nvim/site/pack/packer/start/vim-fugitive",
@@ -170,7 +180,7 @@ _G.packer_plugins = {
     url = "https://github.com/PatrBal/vim-textidote"
   },
   vimtex = {
-    config = { "\27LJ\2\n÷\2\0\0\2\0\18\0'6\0\0\0009\0\1\0'\1\3\0=\1\2\0006\0\0\0009\0\1\0009\0\0\0009\0\1\0'\1\5\0=\1\4\0006\0\0\0009\0\1\0)\1\1\0=\1\6\0006\0\0\0009\0\1\0'\1\b\0=\1\a\0006\0\0\0009\0\1\0)\1\0\0=\1\t\0006\0\0\0009\0\n\0)\1\1\0=\1\v\0006\0\0\0009\0\1\0'\1\r\0=\1\f\0006\0\0\0009\0\14\0+\1\2\0=\1\15\0006\0\0\0009\0\15\0006\1\17\0=\1\16\0K\0\1\0\nen_us\rspellang\nspell\14opt_local\nabdmg\16tex_conceal\17conceallevel\bopt\25vimtex_quickfix_mode\fzathura\23vimtex_view_method\24tex_comment_nospell\vokular\31vimtex_view_general_viewer\17/usr/bin/nvr\29vimtex_complier_progname\6g\bvim\0" },
+    config = { "\27LJ\2\nï\2\0\0\2\0\18\0%6\0\0\0009\0\1\0'\1\3\0=\1\2\0006\0\0\0009\0\1\0'\1\5\0=\1\4\0006\0\0\0009\0\1\0)\1\1\0=\1\6\0006\0\0\0009\0\1\0'\1\b\0=\1\a\0006\0\0\0009\0\1\0)\1\0\0=\1\t\0006\0\0\0009\0\n\0)\1\1\0=\1\v\0006\0\0\0009\0\1\0'\1\r\0=\1\f\0006\0\0\0009\0\14\0+\1\2\0=\1\15\0006\0\0\0009\0\15\0006\1\17\0=\1\16\0K\0\1\0\nen_us\rspellang\nspell\14opt_local\nabdmg\16tex_conceal\17conceallevel\bopt\25vimtex_quickfix_mode\fzathura\23vimtex_view_method\24tex_comment_nospell\vokular\31vimtex_view_general_viewer\17/usr/bin/nvr\29vimtex_complier_progname\6g\bvim\0" },
     loaded = false,
     needs_bufread = true,
     only_cond = false,
