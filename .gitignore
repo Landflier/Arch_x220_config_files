@@ -10,3 +10,8 @@ octave
 QtProject.conf
 mimeapps.list
 okularrc
+nvim/plugin
+lazygit/state.yml
+tmux/plugins
+lazygit
+lazygit/state.yml
