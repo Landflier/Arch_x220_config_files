@@ -600,7 +600,7 @@ client.connect_signal("unfocus", function(c) c.border_color = beautiful.border_n
 -- }}}
 --
 ---- Autorun programs
---autorun = true
+autorun = true
 --autorunApps =
 --{
 --   "program1",
@@ -609,8 +609,9 @@ client.connect_signal("unfocus", function(c) c.border_color = beautiful.border_n
 --   "program4",
 --   "program5",
 --}
---if autorun then
+if autorun then
+	awful.spawn.with_shell("~/.config/awesome/autorun.sh")
+end
 --   for app = 1, #autorunApps do
 --       awful.util.spawn(autorunApps[app])
 --   end
---end
