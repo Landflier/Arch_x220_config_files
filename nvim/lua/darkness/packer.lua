@@ -88,5 +88,12 @@ use{'Tsuzat/NeoSolarized.nvim'}
 -- floaterm
 use { 'voldikss/vim-floaterm' }
 
+-- vim-tmux navigation with C-h C-l etc.
+use { 'christoomey/vim-tmux-navigator' }
+
+-- tables for markdown
+use { 'dhruvasagar/vim-table-mode' }
+
+
 end)
 
