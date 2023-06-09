@@ -85,7 +85,7 @@ use{ 'tpope/vim-fugitive' }
 -- colorscheme
 use{'Tsuzat/NeoSolarized.nvim'}
 
--- floaterm
+-- floaterm to open lazygit inside vim instance
 use { 'voldikss/vim-floaterm' }
 
 -- vim-tmux navigation with C-h C-l etc.
@@ -94,6 +94,7 @@ use { 'christoomey/vim-tmux-navigator' }
 -- tables for markdown
 use { 'dhruvasagar/vim-table-mode' }
 
-
+-- tabular, to equate lines at different charecters, tabular
+use { 'godlygeek/tabular' }
 end)
 
