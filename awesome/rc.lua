@@ -22,8 +22,6 @@ require("awful.hotkeys_popup.keys")
 ---------  widgets
 --Battery widget
 local batteryarc_widget = require("awesome-wm-widgets.batteryarc-widget.batteryarc")
--- Brightness widget
-local brightness_widget = require("awesome-wm-widgets.brightness-widget.brightness")
 -- xrandr for multiple monitors
 local xrandr = require("xrandr")
 -- Volume widget
@@ -232,12 +230,6 @@ awful.screen.connect_for_each_screen(function(s)
 		show_current_level = true,
 		arc_thickness = 1,
 	}),
-	-- brightness widget
-	brightness_widget{
-		type = 'icon_and_text',
-		program = 'xbacklight',
-		step = 5,        
-	},
 	wibox.widget.systray(),
 	mytextclock,
 	s.mylayoutbox,
@@ -358,10 +350,10 @@ globalkeys = gears.table.join(
     -- Menubar
     awful.key({ modkey }, "p", function() menubar.show() end,
     {description = "show the menubar", group = "launcher"}),
-    -- Brightness widget keys
+    -- Brightness  keys
 
-    awful.key({ modkey         }, ";", function () brightness_widget:inc() end, {description = "increase brightness", group = "custom"}),
-    awful.key({ modkey, "Shift"}, ";", function () brightness_widget:dec() end, {description = "decrease brightness", group = "custom"}),
+    awful.key({ modkey         }, ";", function () awful.util.spawn("light -A 10") end, {description = "increase brightness", group = "custom"}),
+    awful.key({ modkey, "Shift"}, ";", function () awful.util.spawn("light -U 10") end, {description = "decrease brightness", group = "custom"}),
     awful.key({ modkey, "Shift"}, "s", function() xrandr.xrandr() end, {description = "toggle xrand", group = "custom"})
 )
 
