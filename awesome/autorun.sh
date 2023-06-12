@@ -9,5 +9,6 @@ run () {
 # window compositor picom (for terminal bg transparency)
 run "picom -f"
 run "feh --no-fehbg --bg-scale '/home/darkness/.wallpapers/lighthouse.jpg'"
+run "keychain --quiet --eval --noask Photoemission-git-doc github_Landflier id_ed25519"
 #
 # run "keychain --quiet "
