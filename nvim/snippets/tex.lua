@@ -16,14 +16,34 @@ local snippets, autosnippets = {}, {} --}}}
 --local firstSnip = s("snip1", {t"Hi, this is my first latex snippet!"})
 --table.insert(snippets, firstSnip)
 
+-- Physical Review X figure
+local figSnipX = s({trig = "Xfig"}, fmt([[
+\begin{{figure}}[t]
+\includegraphics[scale=0.75]{{ {} }}
+\caption{{ {} }}
+\label {{ {} }}	
+\end{{figure}}
+]], 
+{
+	i(1,""),
+	i(2,""),
+	i(3,""),
+--	f(function()
+--		sec = vim.nvim_exec2{{"?section<CR>f{"}, {output = true}}
+--		return sec
+--	end),
+})
+)
+table.insert(autosnippets, figSnipX)
 
+-- figure snippet
 local figSnip = s({trig = "bfig"}, fmt([[
-	\begin{{figure}}[t]
+\begin{{figure}}[t]
 	\centering
-	\includegraphics[scale=0.75]{{ {} }}
+	\includegraphics{{ {} }}
 	\caption{{ {} }}
-\t      \label {{ {} }}	
-	\end{{figure}}
+	\label {{ {} }}	
+\end{{figure}}
 ]], 
 {
 	i(1,""),
