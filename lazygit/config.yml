@@ -13,4 +13,20 @@ git:
   paging:
     colorArg: never
     pager: delta --dark --paging=never
-
+customCommands:
+- key: '<c-p>'
+  description: "Pull from a specific remote repository"
+  context: 'files'
+  loadingText: 'Pulling ...'
+  command: git pull {{ .Form.Remote }} {{ .Form.RemoteBranch }}
+  prompts:
+    - type: 'input'
+      key: 'Remote'
+      title: "Remote:"
+      suggestions:
+        preset: 'remotes'
+    - type: 'input'
+      key: 'RemoteBranch'
+      title: "Remote branch:"
+      suggestions:
+        command: "git branch --remote --list '{{.Form.Remote}}/*' --format='%(refname:short)' | sed 's/{{.Form.Remote}}\\///'"
